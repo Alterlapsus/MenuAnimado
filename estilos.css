@@ -10,3 +10,47 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+.nav{
+    background-color: steelblue;
+    height: 80px;
+}
+.nav__container{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav__checkbox{
+    display: none;
+}
+.nav__checkbox:checked + .nav__items{
+    transform: translate(0);
+}
+.nav__icon{
+    cursor: pointer;
+}
+.nav__img{
+    display: block;
+    width: 35px;
+}
+.nav__items{
+    position: fixed;
+    top: 80px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 100%;
+    width: 60%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(100%);
+    transition: transform .4s;
+}
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+}
